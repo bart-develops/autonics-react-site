@@ -5,7 +5,7 @@ import NavBar from './NavBar';
 import logo from '../img/autonics-slogan-dark.webp';
 import robots from '../img/robots.webp';
 
-function Header(props) {
+function Header() {
 	return (
 		<>
 			<header className="header">
@@ -21,7 +21,6 @@ function Header(props) {
 					</div>
 				</div>
 			</header>
-			{/* {props.children} */}
 			<NavBar />
 		</>
 	);

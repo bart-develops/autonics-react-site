@@ -1,0 +1,52 @@
+@import './variables.scss';
+.nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 5;
+	min-height: 70px;
+}
+.nav-cont {
+	justify-content: space-around;
+	align-items: center;
+	gap: 30px;
+	padding: 15px 30px;
+	li {
+		padding: 5px;
+
+		&:hover a {
+			color: $orange;
+		}
+	}
+}
+.menu-button {
+	svg {
+		fill: $white;
+		width: 60px;
+		height: 60px;
+	}
+}
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+	.nav-cont {
+		padding: 0;
+	}
+}
+@media only screen and (min-width: 800px) {
+	.menu-button {
+		display: none;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.nav {
+		width: 100%;
+		background-color: $grey-op;
+	}
+	.nav-cont {
+		flex-direction: column;
+	}
+	.menu-button {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
