@@ -1,6 +1,29 @@
-$white: #fff;
-$grey: #222629;
-$grey-op: #222629d5;
-$dark-grey: #141516;
-$black: #0c0c0d;
-$orange: #c8702b;
+// :root {
+// 	.dark {
+// 		$white: #fff;
+// 		$grey: #222629;
+// 		$grey-op: #222629d5;
+// 		$dark-grey: #141516;
+// 		$black: #0c0c0d;
+// 		$orange: #c8702b;
+// 	}
+// }
+
+:root {
+	.dark {
+		--white: #fff;
+		--grey: #222629;
+		--grey-op: #222629d5;
+		--dark-grey: #141516;
+		--black: #0c0c0d;
+		--orange: #c8702b;
+	}
+	.light {
+		--white: #0c0c0d;
+		--grey: #ddd9d6;
+		--grey-op: #ddd9d6d5;
+		--dark-grey: #ebeae9;
+		--black: #fff;
+		--orange: #c8702b;
+	}
+}

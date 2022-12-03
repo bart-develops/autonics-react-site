@@ -20,7 +20,7 @@
 	padding: 10px;
 }
 .header-logo {
-	width: calc(200px + 15vw);
+	width: min(calc(200px + 15vw), 400px);
 	height: auto;
 }
 .header-img {
@@ -49,6 +49,6 @@
 		width: 50%;
 	}
 	.header-cont {
-		background-color: $grey;
+		background-color: var(--grey);
 	}
 }

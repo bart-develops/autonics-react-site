@@ -8,6 +8,7 @@ import robots from '../img/robots.webp';
 function Header() {
 	return (
 		<>
+			<NavBar />
 			<header className="header">
 				<img className="header-img" src={robots} alt="" srcSet="" />
 				<div className="header-cont">
@@ -21,7 +22,6 @@ function Header() {
 					</div>
 				</div>
 			</header>
-			<NavBar />
 		</>
 	);
 }

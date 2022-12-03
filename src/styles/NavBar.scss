@@ -15,23 +15,18 @@
 		padding: 5px;
 
 		&:hover a {
-			color: $orange;
+			color: var(--orange);
 		}
 	}
 }
 .menu-button {
 	svg {
-		fill: $white;
+		fill: var(--white);
 		width: 60px;
 		height: 60px;
 	}
 }
-@media only screen and (min-width: 700px) and (max-width: 800px) {
-	.nav-cont {
-		padding: 0;
-	}
-}
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 701px) {
 	.menu-button {
 		display: none;
 	}
@@ -39,7 +34,8 @@
 @media only screen and (max-width: 700px) {
 	.nav {
 		width: 100%;
-		background-color: $grey-op;
+		position: fixed;
+		// background-color: var(--grey-op);
 	}
 	.nav-cont {
 		flex-direction: column;

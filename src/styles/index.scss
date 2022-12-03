@@ -8,8 +8,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	color: $white;
-	background-color: $dark-grey;
+	color: var(--white);
+	background-color: var(--dark-grey);
 
 	min-height: 3000px;
 }
@@ -68,8 +68,10 @@ code {
 		font-size: 20px;
 	}
 }
-// @media only screen and (min-width: 1400px) {
-// 	:root h1 {
-// 		font-size: 2.5rem;
-// 	}
-// }
+@media only screen and (min-width: 1200px) {
+	:root {
+		h2 {
+			font-size: 1.75rem;
+		}
+	}
+}
