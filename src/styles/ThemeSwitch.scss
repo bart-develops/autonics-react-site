@@ -1,0 +1,37 @@
+.theme-cont {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #e3c42b;
+	overflow: hidden;
+	z-index: 10;
+
+	&::before {
+		content: '';
+		position: relative;
+		display: block;
+		bottom: 10px;
+		right: 10px;
+		width: inherit;
+		height: inherit;
+		border-radius: inherit;
+		background-color: #0c0c0d;
+		z-index: 9;
+		transition-property: bottom, right;
+		transition-duration: 1s;
+		transition-timing-function: cubic-bezier(0.79, 0.14, 0.21, 0.86);
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+.light .theme-cont {
+	&::before {
+		bottom: 50px;
+		right: 50px;
+	}
+}

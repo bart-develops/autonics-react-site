@@ -59,13 +59,16 @@ code {
 	:root {
 		font-size: 18px;
 		h1 {
-			font-size: 2rem;
+			font-size: 1.75rem;
 		}
 	}
 }
 @media only screen and (min-width: 600px) {
 	:root {
 		font-size: 20px;
+		h1 {
+			font-size: 2rem;
+		}
 	}
 }
 @media only screen and (min-width: 1200px) {

@@ -1,0 +1,60 @@
+@import './variables.scss';
+.footer {
+	background-color: var(--black);
+	p {
+		padding: 20px 0;
+		text-align: center;
+		margin: 0;
+		background-color: var(--dark-black);
+	}
+}
+.column-cont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0;
+	gap: 20px;
+}
+.col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: baseline;
+
+	&:last-child {
+		border-right: none;
+	}
+
+	li {
+		margin-block: 5px;
+
+		&:hover {
+			color: var(--dark-white);
+		}
+	}
+}
+.line {
+	height: 180px;
+	width: 3px;
+	background-color: var(--grey);
+}
+@media only screen and (max-width: 500px) {
+	.column-cont {
+		flex-direction: column;
+	}
+	.line {
+		height: 3px;
+		width: 180px;
+	}
+}
+@media only screen and (min-width: 700px) {
+	.column-cont {
+		gap: 50px;
+	}
+	.col li {
+		margin-block: 10px;
+	}
+	.line {
+		height: 200px;
+	}
+}

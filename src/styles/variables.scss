@@ -12,18 +12,39 @@
 :root {
 	.dark {
 		--white: #fff;
+		--dark-white: #b2b6b8;
+		--light-grey: #3e4346;
 		--grey: #222629;
 		--grey-op: #222629d5;
 		--dark-grey: #141516;
 		--black: #0c0c0d;
+		--dark-black: #080808;
 		--orange: #c8702b;
 	}
+	// .light {
+	// 	--white: #0c0c0d;
+	// 	--dark-white: #4d4947;
+	// 	--light-grey: #c1bcb9;
+	// 	--grey: #ddd9d6;
+	// 	--grey-op: #ddd9d6d5;
+	// 	--dark-grey: #ebeae9;
+	// 	--black: #fff;
+	// 	// --black: #f3f3f2;
+	// 	--dark-black: #f7f7f7;
+
+	// 	--orange: #c8702b;
+	// }
 	.light {
 		--white: #0c0c0d;
-		--grey: #ddd9d6;
+		--dark-white: #4d4947;
+		--light-grey: #c1bcb9;
+		--grey: #b2b6b8; //dark-white
 		--grey-op: #ddd9d6d5;
-		--dark-grey: #ebeae9;
-		--black: #fff;
+		--dark-grey: #fff;
+		--black: #ebeae9;
+		// --black: #f3f3f2;
+		--dark-black: #f7f7f7;
+
 		--orange: #c8702b;
 	}
 }

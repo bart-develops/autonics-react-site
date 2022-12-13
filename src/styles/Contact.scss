@@ -1,0 +1,28 @@
+.contact-cont {
+	padding: 50px calc(50vw - 135px);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: baseline;
+}
+.method {
+	display: flex;
+	column-gap: 20px;
+	justify-content: baseline;
+	align-items: center;
+	width: 270px;
+}
+.icon {
+	width: 1.3rem;
+	height: auto;
+	flex-shrink: 0;
+}
+@media only screen and (min-width: 800px) {
+	.contact-cont {
+		padding: 100px calc(50vw - 165px);
+	}
+	.method {
+		width: 330px;
+	}
+}

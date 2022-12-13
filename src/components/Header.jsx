@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Header.scss';
 import NavBar from './NavBar';
-
 import logo from '../img/autonics-slogan-dark.webp';
 import robots from '../img/robots.webp';
 

@@ -38,6 +38,9 @@
 		filter: brightness(50%);
 		object-position: bottom 50% right 5%;
 	}
+	.light .header {
+		color: var(--black);
+	}
 }
 @media only screen and (min-width: 1200px) {
 	.header {

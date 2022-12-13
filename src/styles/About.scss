@@ -1,0 +1,35 @@
+.about-cont {
+	background-image: url('../img/nuts.webp');
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 75px 50px;
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		background-color: var(--grey);
+		opacity: 0.98;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		position: absolute;
+		z-index: 0;
+	}
+
+	p,
+	h2 {
+		position: relative;
+		z-index: 2;
+	}
+
+	p {
+		max-width: 700px;
+	}
+}
