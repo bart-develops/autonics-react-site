@@ -10,29 +10,18 @@ function NavBar() {
 		setActive(!isActive);
 	};
 
-	var isSmall = window.innerWidth < 700 ? true : false;
-	window.addEventListener('resize', () => {
-		if (window.innerWidth <= 700) isSmall = true;
-		else if (window.innerWidth > 700) isSmall = false;
-	});
-
 	useEffect(() => {
-		if (window.innerWidth > 800) setActive(true);
+		if (window.innerWidth > 700) setActive(true);
 
 		const handleResize = () => {
-			if (window.innerWidth > 800) setActive(true);
+			if (window.innerWidth > 700) setActive(true);
 		};
 
 		window.addEventListener('resize', handleResize);
 	}, [isActive]);
 
 	return (
-		<nav
-			className="nav"
-			style={{
-				backgroundColor: isSmall && isActive ? '#222629d3' : 'transparent',
-			}}
-		>
+		<nav className="nav">
 			<ol className="nav-cont">
 				{isActive && (
 					<>
