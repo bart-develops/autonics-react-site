@@ -9,9 +9,9 @@ function Header() {
 		<>
 			<NavBar />
 			<header className="header">
-				<img className="header-img" src={robots} alt="" srcSet="" />
+				<img className="header-img" src={robots} alt="test" srcSet="" />
 				<div className="header-cont">
-					<img className="header-logo" src={logo} alt="" />
+					<img className="header-logo" src={logo} alt="test" />
 					<div className="text-cont">
 						<h1>Most reliable automatics manufacturer in Europe.</h1>
 						<p>
