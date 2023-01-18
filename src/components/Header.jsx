@@ -9,7 +9,7 @@ function Header() {
 		<>
 			<NavBar />
 			<header className="header">
-				<img className="header-img" src={robots} alt="" srcSet="" />
+				<img className="header-img" src={robots} alt="" />
 				<div className="header-cont">
 					<img className="header-logo" src={logo} alt="" />
 					<div className="text-cont">

@@ -1,14 +1,14 @@
 import React from 'react';
 import '../styles/Advantage.scss';
 
-function Advantage(props) {
+function Advantage({ direction, h2, p, src, alt }) {
 	return (
-		<div className={`adv-cont adv-${props.direction}`}>
+		<div className={`advantage-cont adv-${direction}`}>
 			<div className="adv-text-cont">
-				<h2>{props.h2}</h2>
-				<p>{props.p}</p>
+				<h2>{h2}</h2>
+				<p>{p}</p>
 			</div>
-			<img className="adv-img" src={props.src} alt="" />
+			<img className="adv-img" src={src} alt={alt} />
 		</div>
 	);
 }
